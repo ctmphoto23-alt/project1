@@ -27,6 +27,7 @@ body {
 
 .container {
     padding: 96px 0;
+    center: center;
 }
 
 .purple {
@@ -58,7 +59,7 @@ nav {
     display: flex;
     gap: 32px;
     align-items: center;
-    
+  
 }
 
 .nav__row {
