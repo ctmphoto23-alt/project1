@@ -28,6 +28,8 @@ body {
 .container {
     padding: 96px 0;
     center: center;
+    dispaly: flex;
+    flex-direction: column;
 }
 
 .purple {
@@ -65,7 +67,7 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
-    
+    aligh-items: center;
 }
 
 .nav__signup {
@@ -82,10 +84,14 @@ nav {
     margin: 8px 0;
     padding-bottom: 4px;
 }
-
+@media(max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+}
 
 .btn__menu {
-    display: none;
+    display: block;
     background: transparent;
     border: none;
     transition: all 300ms ease;
