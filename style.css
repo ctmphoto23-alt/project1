@@ -17,19 +17,24 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .row__narrow {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    display: flex;
 }
 
 .container {
     padding: 96px 0;
-    center: center;
-    dispaly: flex;
+    justify-content: center;
+    display: flex;
     flex-direction: column;
+    
 }
 
 .purple {
