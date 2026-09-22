@@ -1,193 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="landing">
-        <nav>
-            <div class="row nav__row">
-                <div class="nav__logo">
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+              alt="my logo
+               "
+            />
+          </div>
 
-               <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
-               alt="my logo
-               "> </div>
-
-               <div class="nav__links">
-                <a href="#">home</a>
-                <a href="#">blog</a>
-                <a href="#">pricing</a>
-                <a href="#">contact us</a>
-                <a href="#">login</a>
-                <a href="#" class="nav__signup">sign up</a>
-                </div>
-                <button class="btn__menu" 
-            
-            
-                onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu--svg">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-        <div class="modal">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <div class="modal__links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact Us</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
-            </div>
+          <div class="nav__links">
+            <a href="#">home</a>
+            <a href="#">blog</a>
+            <a href="#">pricing</a>
+            <a href="#">contact us</a>
+            <a href="#">login</a>
+            <a href="#" class="nav__signup">sign up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
-        <header>
-            <div class="container">
-                <div class="row .row__narrow">
-                    <div 
-               class="header__content">
-    <h1>
-        Beautiful React Templates
-        <span class="purple">for you.</span>
-    </h1>
+      </nav>
+      <div class="modal">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="light___StyledCloseIcon-lj69nl-14 fASujC"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal__links">
+          <a class="modal__link">About</a>
+          <a class="modal__link">Blog</a>
+          <a class="modal__link">Pricing</a>
+          <a class="modal__link">Contact Us</a>
+          <a class="modal__link">Login</a>
+          <a class="modal__link modal__link--primary">Sign Up</a>
+        </div>
+      </div>
+      <header>
+        <div class="container">
+          <div class="row row__narrow">
+            <div class="header__content">
+              <h1>
+                Beautiful React Templates
+                <span class="purple">for you.</span>
+              </h1>
 
-    <p class="header__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        euismod, nisl nec tincidunt lacinia, nunc est aliquam nisl nunc
-        euismod.
-    </p>
+              <p class="header__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                euismod, nisl nec tincidunt lacinia, nunc est aliquam nisl nunc
+                euismod.
+              </p>
 
-    <div class="header__email">
-        <input
-            type="text"
-            class="header__email--input"
-            placeholder="Your email address"
-        />
-        <button class="header__email--btn">Get Started</button>
-    </div>
+              <div class="header__email">
+                <input
+                  type="text"
+                  class="header__email--input"
+                  placeholder="Your email address"
+                />
+                <button class="header__email--btn">Get Started</button>
+              </div>
 
-    <p class="header__title">Our trusted customers</p>
+              <p class="header__title">Our trusted customers</p>
 
-    <img
-        src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-        class="header__customers"
-    />
-</div>
-
-<figure class="header__img--wrapper">
-    <img
-        src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-        class="header__img"
-    />
-</figure>            
-
-                       
-                    </div>
-                </div>
+              <img
+                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                class="header__customers"
+              />
             </div>
-        </header>
+
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                class="header__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </header>
     </section>
     <main>
-        <section id="features">
-            <div class="container">
-                <div class="row .row__narrow">
-                    <h4 class="Section__Tag">Features</h4>
-                    <h2 Class="section__title">" We Have Amazing " <span class="purple">Service.</span> </h2>
-                <div
-                Class="section__para">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt
-                            lacinia, nunc est aliquam nunc, eget aliquam nisl nunc euismod.</p>
-
+      <section id="features">
+        <div class="container">
+          <div class="row row__narrow">
+            <h4 class="section__tag">Features</h4>
+            <h2 class="section__title">
+              We Have Amazing <span class="purple">Service.</span>
+            </h2>
+            <div class="section__para">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc, eget
+                aliquam nisl nunc euismod.
+              </p>
+              <div class="feature_row">
+                <figure class="feature__img--wrapper">
+                  <img
+                    src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                    class="feature__img"
+                  />
+                </figure>
+                <div class="feature__text">
+                  <h2 class="feature__title">Secure</h2>
+                  <p class="feature__para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc,
+                    eget aliquam nisl nunc euismod.
+                  </p>
                 </div>
+              </div>
             </div>
-            
-        </section>
-        <section id="quality">
-            <div class="container">
-                <div class="row .row__narrow">
-                    <div class="quality__description">
-                        <div class="section__tag">QUALITY WORK</div>
-                      <h2 class="section__title"> 
-                        "Designed & Developed by Professionals."
-                        <span class="purple">Professionals. </span>
-                        </h2> 
-                        <p class="section__para">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt
-                                lacinia, nunc est aliquam nunc, eget aliquam nisl nunc euismod.</p>
-                        </p>
-                        <button class="btn btn--primary">Learn More</button>
-                    
-                    <div class="quality__img--wrapper"">
-                        <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png">
-                         
-
-                   
-                    <!--  -->Quality Work Section<!--  -->
-                
-            
-        </section>
-        <section id="steps">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter Steps Section<!--  -->
-                </div>
-            </div>
-        </section>
-        <section id="values">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter Values Section<!--  -->
-                </div>
-            </div>
-        </section>
-        <section id="pricing">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter Pricing Section<!--  -->
-                </div>
-            </div>
-        </section>
-        <section id="testimonials">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter Testimonials Section<!--  -->
-                </div>
-            </div>
-        </section>
-        <section id="start">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter "Start"/Call to action section<!--  -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="row footer__row">
-            <!--  -->Enter Footer<!--  -->
+          </div>
+          
+          <class="feature">
+        
+        <class="feature__row">
+        <figure class="feature__img--wrapper">
+          <img
+            src="./assets/support-icon.0f5e1c7b8d3a4f9e8c2b6d1e2f3a4b5c.svg"
+            class="feature__img"
+          />
+        </figure>
+        <div class="feature__text">
+          <h2 class="feature__title">Support</h2>
+          <p class="feature__para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc, eget
+            aliquam nisl nunc euismod.
+          </p>
         </div>
-    </footer>
-</body>
+      </section>
+      <div class="quality__description">
+        <div class="section__tag">QUALITY WORK</div>
+        <h2 class="section__title">
+          Designed & Developed by Professionals.
+          <span class="purple">Professionals. </span>
+        </h2>
+        <p class="section__para"></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          nisl nec tincidunt lacinia, nunc est aliquam nunc, eget aliquam nisl
+          nunc euismod.
+        </p>
 
+        </div>
+        <div class="feature">
+        <div class="feature__row">
+        <figure class="feature__img--wrapper">
+            <img src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="feature__img">
+        </figure>
+        <div class="feature__text">
+            <h2 class="feature__title">Customizable</h2>
+            <p class="feature__para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc, eget aliquam nisl nunc euismod.
+            </p>
+            </div>
+            </div>
+            </div>
+            <div class="feature__row">
+                <figure class="feature__img--wrapper">
+                    <img src="/assets/reliable-icon.0f5e1c7b8d3a4f9e8c2b6d1e2f3a4b5c.svg" class="feature__img">
+                </figure>
+                <div class="feature__text">
+                    <h2 class="feature__title">Reliable</h2>
+                    <p class="feature__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc, eget aliquam nisl nunc euismod.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <div class="feature">
+            <div class="feature__row">
+                <figure class="feature__img--wrapper">
+                    <img src="/assets/simple-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="feature__img">
+                </figure>
+                <div class="feature__text">
+                    <h2 class="feature__title">Easy</h2>
+                    <p class="feature__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt lacinia, nunc est aliquam nunc, eget aliquam nisl nunc euismod.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section id="quality">
+    <div class="container">
+        <div class="feature__text">
+            
+        </div>
+
+        <button class="btn btn--primary">Learn More</button>
+
+        <div class="quality__img--wrapper">
+          <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" />
+
+          <!--  -->Quality Work Section<!--  -->
+
+          <section id="steps">
+            <div class="container">
+              <div class="row"><!--  -->Enter Steps Section<!--  --></div>
+            </div>
+          </section>
+          <section id="values">
+            <div class="container">
+              <div class="row"><!--  -->Enter Values Section<!--  --></div>
+            </div>
+          </section>
+          <section id="pricing">
+            <div class="container">
+              <div class="row"><!--  -->Enter Pricing Section<!--  --></div>
+            </div>
+          </section>
+          <section id="testimonials">
+            <div class="container">
+              <div class="row">
+                <!--  -->Enter Testimonials Section<!--  -->
+              </div>
+            </div>
+          </section>
+          <section id="start">
+            <div class="container">
+              <div class="row">
+                <!--  -->Enter "Start"/Call to action section<!--  -->
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="row footer__row"><!--  -->Enter Footer<!--  --></div>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
