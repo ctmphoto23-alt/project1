@@ -260,7 +260,14 @@ FEATURES ↓
   align-items: flex-start;
   padding: 32px 24px;
 }
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.feature {
+  width: calc(100% / 3);
+}
 /* 
 
 QUALITY WORK ↓
