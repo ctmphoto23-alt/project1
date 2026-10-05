@@ -123,10 +123,30 @@ nav {
 }
 
 .btn__menu {
-  display: block;
+  display: none;
   background: transparent;
   border: none;
   transition: all 300ms ease;
+}
+
+.btn__menu {
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: none;
+  flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  .btn__menu {
+    display: block;
+  }
+  header .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    padding: 80px 32px;
+  }
 }
 
 .btn__menu--svg:hover {
@@ -202,8 +222,11 @@ HEADER / ABOUT US ↓
   width: 55%;
 }
 
-.header__customers { margin-top: 16px; padding-right: 128px; opacity: 0.5; }
-
+.header__customers {
+  margin-top: 16px;
+  padding-right: 128px;
+  opacity: 0.5;
+}
 
 p {
   font-size: 18px;
@@ -278,11 +301,26 @@ FEATURES ↓
 #features {
   position: relative;
 }
-.feature__img { width: 24px; height: 24px; }
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
 
-.feature__img--wrapper { display: flex; padding: 20px; border: 1px solid rgb(229, 231, 235); border-radius: 500px; }
+.feature__img--wrapper {
+  display: flex;
+  padding: 20px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 500px;
+}
 
-.feature__para { margin-top: 16px; font-size: 16px; max-width: calc(211.333333px); color: rgb(124, 139, 161); line-height: 2; font-weight: 500; }
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  max-width: calc(211.333333px);
+  color: rgb(124, 139, 161);
+  line-height: 2;
+  font-weight: 500;
+}
 
 #features .row__narrow {
   display: flex;
@@ -448,6 +486,18 @@ VALUES ↓
   width: 50%;
 }
 
+.values__description {
+  padding: 32px 64px 32px 0px;
+}
+
+.value {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
 .btn__menu {
   margin-left: 0px;
   margin-right: 0px;
@@ -468,6 +518,17 @@ VALUES ↓
   align-items: center;
   width: 36px;
   height: 36px;
+}
+
+.value:nth-of-type(1) {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: rgb(113, 128, 150);
 }
 
 .value:nth-child(2) .value__img--wrapper {
