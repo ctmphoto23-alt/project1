@@ -201,6 +201,19 @@ HEADER / ABOUT US ↓
 .header__img--wrapper {
   width: 55%;
 }
+
+.header__customers { margin-top: 16px; padding-right: 128px; opacity: 0.5; }
+
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.header__subtitile {
+  margin: 32px 0;
+}
+
 .header__img {
   width: 100%;
 }
