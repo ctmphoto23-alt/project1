@@ -1288,6 +1288,21 @@ MOBILE RESPONSIVENESS ↓
     width: 100%;
   }
 
+  .feature__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature__text {
+    margin-left: 0;
+  }
+
+  .feature__para {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .section__title {
     font-size: 32px;
     text-align: center;
@@ -1300,6 +1315,20 @@ MOBILE RESPONSIVENESS ↓
     padding-right: 0;
     padding-left: 0;
     text-align: center;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step__number {
+    margin-bottom: 12px;
+  }
+
+  .step__description {
+    width: 100%;
   }
 
   .quality__img--wrapper,
@@ -1393,6 +1422,11 @@ MOBILE RESPONSIVENESS ↓
   #values .row {
     flex-direction: column-reverse;
   }
+
+  #quality .row {
+    gap: 32px;
+  }
+
   #steps .row,
   #testimonials .row {
     flex-direction: column;
